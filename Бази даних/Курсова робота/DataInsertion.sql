@@ -1,0 +1,270 @@
+-- USE Restaurant
+-- GO
+
+-- INSERT INTO [Position] (Position_name, Salary)
+-- VALUES
+--     ('Waiter', 16000),
+--     ('Сook', 18000),
+--     ('Chef', 25000),
+--     ('Cleaner', 13000),
+--     ('Bartender', 17000),
+--     ('Manager', 21000)
+-- GO
+
+-- INSERT INTO Employee (First_name, Last_name, [Position])
+-- VALUES
+--     ('Taras', 'Shevchenko', 3),
+--     ('Ivan', 'Franko', 6),
+--     ('Oleksandr', 'Oles', 1),
+--     ('Lina', 'Kostenko', 1),
+--     ('Vasyl', 'Stus', 5),
+--     ('Pavlo', 'Tychyna', 2),
+--     ('Oles', 'Gonchar', 2),
+--     ('Sergiy', 'Zhadan', 1),
+--     ('Yuriy', 'Izdryck', 2),
+--     ('Lubko', 'Deresh', 1),
+--     ('Mykola', 'Vigranovskiy', 1),
+--     ('Oleksandr', 'Dovzhenko', 1),
+--     ('Ivan', 'Drach', 1),
+--     ('Dmytro', 'Pavlychko', 4),
+--     ('Volodymyr', 'Vynnychenko', 2),
+--     ('Oleksandr', 'Butuzov', 2),
+--     ('Mykola', 'Rudenko', 2),
+--     ('Valentyn', 'Grabovskiy', 2),
+--     ('Panteleymon', 'Kulish', 2),
+--     ('Volodymyr', 'Susura', 2),
+--     ('Yevgen', 'Grebinka', 2)
+-- GO
+
+-- INSERT INTO Menu (Menu_name)
+-- VALUES
+--     ('Pizza'),
+--     ('Sushi'),
+--     ('Burgers'),
+--     ('Soups'),
+--     ('Hot Meals'),
+--     ('Salads'),
+--     ('Desserts'),
+--     ('Non-Alco Drinks'),
+--     ('Alco Drinks')
+-- GO
+
+-- INSERT INTO Meal (Meal_name, Price, Meal_weight, Menu)
+-- VALUES
+--     ('Pepperoni', 259, 520, 1),
+--     ('Carbonara', 259, 500, 1),
+--     ('Americano', 259, 540, 1),
+--     ('Margherita', 189, 460, 1),
+--     ('Pasta Carbonara', 139, 260, 5),
+--     ('Lasagna', 169, 320, 5),
+--     ('Chicken Wings', 199, 250, 5),
+--     ('French Fries', 79, 140, 5),
+--     ('Pork Steak', 279, 220, 5),
+--     ('Beef Steak', 349, 220, 5),
+--     ('Hamburger', 89, 180, 3),
+--     ('Double Cheeseburger', 169, 280, 3),
+--     ('King Burger', 229, 310, 3),
+--     ('Philadelphia Classic', 259, 260, 2),
+--     ('Philadelphia Max', 319, 305, 2),
+--     ('Golden Dragon', 299, 290, 2),
+--     ('California', 279, 220, 2),
+--     ('Thai Salmon', 299, 330, 2),
+--     ('Ramen', 169, 350, 4),
+--     ('Cheese Soup', 179, 315, 4),
+--     ('Chicken Broth', 89, 365, 4),
+--     ('Caesar', 189, 275, 6),
+--     ('Greese', 125, 245, 6),
+--     ('Salmon Salad', 199, 190, 6),
+--     ('Cheesecake', 109, 140, 7),
+--     ('Napoleon', 119, 120, 7),
+--     ('Pepsi', 45, 500, 8),
+--     ('Borjomi', 85, 500, 8),
+--     ('Juice', 99, 950, 8),
+--     ('Jack Daniels', 1499, 1000, 9),
+--     ('Finlandia', 449, 500, 9),
+--     ('Martini Prosecco', 449, 750, 9)
+-- GO
+
+-- INSERT INTO Storage(Storage_type, Temperature)
+-- VALUES
+--     ('Freezer', -15),
+--     ('Refrigerator', 4),
+--     ('Pantry', 10)
+-- GO
+
+-- INSERT INTO Ingredient (Ingredient_name, Ingredient_type, Left_in_storage, Storage)
+-- VALUES
+--     ('Mocarella', 'Cheese', 5, 'Refrigerator'),
+--     ('Parmesan', 'Cheese', 6, 'Refrigerator'),
+--     ('Beef', 'Meat', 13, 'Freezer'),
+--     ('Pork', 'Meat', 16, 'Freezer'),
+--     ('Chicken', 'Meat', 20, 'Freezer'),
+--     ('Salmon', 'Fish', 11, 'Freezer'),
+--     ('Tuna', 'Fish', 9, 'Freezer'),
+--     ('Eel', 'Fish', 7, 'Freezer'),
+--     ('Potato', 'Vegatable', 25, 'Pantry'),
+--     ('Сucumber', 'Vegatable', 10, 'Pantry'),
+--     ('Tomato', 'Vegatable', 9, 'Pantry'),
+--     ('Avocado', 'Vegatable', 3, 'Pantry'),
+--     ('Cream Cheese', 'Cheese', 5, 'Refrigerator'),
+--     ('Onion', 'Vegatable', 10, 'Pantry'),
+--     ('Garlic', 'Vegatable', 3, 'Pantry'),
+--     ('Spaghetti', 'Pasta', 12, 'Pantry'),
+--     ('Mushroom', 'Vegatable', 10, 'Pantry'),
+--     ('Lettuce', 'Vegatable', 6, 'Pantry'),
+--     ('Feta', 'Cheese', 4, 'Refrigerator'),
+--     ('Shrimp', 'Fish', 5, 'Freezer'),
+--     ('Nori', 'Vegatable', 1, 'Pantry'),
+--     ('Carrot', 'Vegatable', 5, 'Pantry'),
+--     ('Mayonnaise', 'Sauce', 3, 'Refrigerator'),
+--     ('Ketchup', 'Sauce', 3, 'Refrigerator'),
+--     ('Butter', 'Dairy', 10, 'Refrigerator'),
+--     ('Eggs', 'Meat', 4, 'Refrigerator'),
+--     ('Milk', 'Dairy', 10, 'Refrigerator'),
+--     ('Dough', 'Pasta', 20, 'Refrigerator'),
+--     ('Sweet And Sour Sauce', 'Sauce', 2, 'Refrigerator'),
+--     ('Pepperoni', 'Meat', 4, 'Refrigerator'),
+--     ('Barbecue Sauce', 'Sauce', 2, 'Refrigerator'),
+--     ('Ham', 'Meat', 4, 'Refrigerator'),
+--     ('Pepper', 'Vegatable', 5, 'Pantry'),
+--     ('Pickle', 'Vegatable', 4, 'Refrigerator'),
+--     ('Bacon', 'Meat', 3, 'Refrigerator'),
+--     ('Dorblu', 'Cheese', 4, 'Refrigerator'),
+--     ('Lasagna', 'Pasta', 5, 'Pantry'),
+--     ('Martini Prosecco', 'Alcohol', 8, 'Refrigerator'),
+--     ('Jack Daniels', 'Alcohol', 6, 'Refrigerator'),
+--     ('Finlandia', 'Alcohol', 10, 'Refrigerator'),
+--     ('Pepsi', 'Drink', 20, 'Refrigerator'),
+--     ('Borjomi', 'Drink', 10, 'Refrigerator'),
+--     ('Juice', 'Drink', 14, 'Refrigerator'),
+--     ('Rice', 'Vegatable', 12, 'Pantry')
+-- GO
+
+-- INSERT INTO Ingredient_Meal (Meal, Ingredient, Ingredient_weight)
+-- VALUES
+--     ('Pepperoni', 'Dough', 200),('Pepperoni', 'Mocarella', 100),('Pepperoni', 'Ketchup', 50),('Pepperoni', 'Pepperoni', 50),('Pepperoni', 'Pepper', 20),
+--     ('Margherita', 'Dough', 240),('Margherita', 'Mocarella', 150),('Margherita', 'Ketchup', 50),
+--     ('Carbonara', 'Dough', 200),('Carbonara', 'Ham', 50),('Carbonara', 'Parmesan', 80),('Carbonara', 'Tomato', 50),('Carbonara', 'Mayonnaise', 20),
+--     ('Americano', 'Dough', 200),('Americano', 'Barbecue Sauce', 30),('Americano', 'Mocarella', 50),('Americano', 'Chicken', 40),('Americano', 'Pepperoni', 40),
+--     ('Pasta Carbonara', 'Spaghetti', 190),('Pasta Carbonara', 'Bacon', 10),('Pasta Carbonara', 'Ham', 10),('Pasta Carbonara', 'Garlic', 5),('Pasta Carbonara', 'Parmesan', 40),
+--     ('Lasagna', 'Lasagna', 80),('Lasagna', 'Parmesan', 50),('Lasagna', 'Beef', 200),('Lasagna', 'Ketchup', 20),
+--     ('Chicken Wings', 'Chicken', 240),('Chicken Wings', 'Sweet And Sour Sauce', 10),
+--     ('French Fries', 'Potato', 130),('French Fries', 'Ketchup', 10),
+--     ('Pork Steak', 'Pork', 220),
+--     ('Beef Steak', 'Beef', 220),
+--     ('Hamburger', 'Dough', 60),('Hamburger', 'Beef', 70),('Hamburger', 'Onion', 10),('Hamburger', 'Tomato', 10),('Hamburger', 'Pickle', 10),('Hamburger', 'Ketchup', 10),
+--     ('King Burger', 'Dough', 70),('King Burger', 'Beef', 110),('King Burger', 'Lettuce', 20),('King Burger', 'Onion', 20),('King Burger', 'Tomato', 20),('King Burger', 'Ketchup', 10),
+--     ('Philadelphia Classic', 'Salmon', 90),('Philadelphia Classic', 'Rice', 90),('Philadelphia Classic', 'Nori', 10),('Philadelphia Classic', 'Avocado', 10),('Philadelphia Classic', 'Сucumber', 20),
+--     ('Golden Dragon', 'Eel', 90),('Golden Dragon', 'Cream Cheese', 20),('Golden Dragon', 'Сucumber', 20),('Golden Dragon', 'Eggs', 20),('Golden Dragon', 'Nori', 10),('Golden Dragon', 'Rice', 90),
+--     ('California', 'Tuna', 100),('California', 'Сucumber', 20),('California', 'Rice', 90),('California', 'Nori', 10),
+--     ('Ramen', 'Spaghetti', 100),('Ramen', 'Pork', 40),('Ramen', 'Eggs', 80),('Ramen', 'Nori', 10),('Ramen', 'Onion', 20),
+--     ('Cheese Soup', 'Dorblu', 40),('Cheese Soup', 'Cream Cheese', 50),('Cheese Soup', 'Bacon', 40),
+--     ('Chicken Broth', 'Chicken', 100),('Chicken Broth', 'Eggs', 60),('Chicken Broth', 'Spaghetti', 100),
+--     ('Caesar', 'Bacon', 50),('Caesar', 'Tomato', 40),('Caesar', 'Eggs', 40),('Caesar', 'Parmesan', 20),('Caesar', 'Garlic', 5),('Caesar', 'Lettuce', 80),
+--     ('Greese', 'Lettuce', 70),('Greese', 'Tomato', 40),('Greese', 'Feta', 40),('Greese', 'Onion', 20),('Greese', 'Сucumber', 50),  ('Greese', 'Pepper', 30),
+--     ('Salmon Salad', 'Salmon', 70),('Salmon Salad', 'Avocado', 20),('Salmon Salad', 'Tomato', 40),('Salmon Salad', 'Lettuce', 80),('Salmon Salad', 'Parmesan', 20),
+--     ('Pepsi', 'Pepsi', 500),
+--     ('Borjomi', 'Borjomi', 500),
+--     ('Juice', 'Juice', 950),
+--     ('Martini Prosecco', 'Martini Prosecco', 750),
+--     ('Jack Daniels', 'Jack Daniels', 1000),
+--     ('Finlandia', 'Finlandia', 500)
+-- GO
+
+-- INSERT INTO [Order] (Order_datetime, Active_status, Waiter)
+-- VALUES
+--     ('2022-02-01 10:12:00', 0, 3),
+--     ('2022-05-12 16:09:00', 0, 10),
+--     ('2022-06-08 12:56:00', 0, 4),
+--     ('2022-29-09 15:41:00', 0, 8),
+--     ('2022-29-04 20:04:00', 0, 12),
+--     ('2022-12-03 16:21:00', 0, 13),
+--     ('2022-25-07 19:30:00', 0, 3),
+--     ('2022-13-03 14:00:00', 0, 4),
+--     ('2022-01-11 21:05:00', 0, 13),
+--     ('2022-09-12 11:29:00', 0, 13),
+--     ('2022-23-06 14:41:00', 0, 4), 
+--     ('2022-18-04 19:32:00', 0, 10),
+--     ('2022-11-10 20:45:00', 0, 8),
+--     ('2022-04-02 17:02:00', 0, 3),
+--     ('2022-15-11 15:50:00', 0, 3),
+--     ('2022-18-01 10:48:00', 0, 6),
+--     ('2022-16-07 12:16:00', 0, 7),
+--     ('2022-05-04 16:43:00', 0, 11),
+--     ('2022-05-05 13:45:00', 0, 3),
+--     ('2022-02-03 21:34:00', 0, 11),
+--     ('2022-17-07 15:10:00', 0, 12),
+--     ('2022-27-06 17:43:00', 0, 13),
+--     ('2022-08-07 10:06:00', 0, 8),
+--     ('2022-12-11 15:31:00', 0, 3),
+--     ('2022-10-04 13:42:00', 0, 4),
+--     ('2022-21-09 18:33:00', 0, 10)
+-- GO
+
+-- INSERT INTO Meal_Order (Order_ID, Meal)
+-- VALUES
+--     (1, 'Lasagna'),(1, 'Greese'),
+--     (2, 'Cheese Soup'),(2, 'Salmon Salad'),(2, 'Juice'),
+--     (3, 'Hamburger'),(3, 'Pepsi'),
+--     (4, 'Pork Steak'),(4, 'Philadelphia Classic'),
+--     (5, 'Margherita'),(5, 'Pepsi'),
+--     (6, 'Beef Steak'),
+--     (7, 'Pasta Carbonara'),
+--     (8, 'Golden Dragon'),(8, 'Philadelphia Max'),
+--     (9, 'Pepperoni'),(9, 'Carbonara'),(9, 'Americano'),(9, 'Chicken Wings'),(9, 'Jack Daniels'),
+--     (10, 'Double Cheeseburger'),
+--     (11, 'Salmon Salad'),
+--     (12, 'French Fries'),(12, 'King Burger'),
+--     (13, 'Caesar'),(13, 'French Fries'),
+--     (14, 'King Burger'),(14, 'Carbonara'),(14, 'Pepsi'),(14, 'Cheesecake'),
+--     (15, 'California'),(15, 'Pepsi'),
+--     (16, 'Ramen'),
+--     (17, 'California'),(17, 'Philadelphia Classic'),(17, 'Golden Dragon'),(17, 'Martini Prosecco'),
+--     (18, 'Thai Salmon'),(18, 'Ramen'),
+--     (19, 'Americano'),
+--     (20, 'Chicken Broth'),(20, 'Napoleon'),
+--     (21, 'Greese'),(21, 'Caesar'),(21, 'Salmon Salad'),
+--     (22, 'Cheese Soup'),
+--     (23, 'Double Cheeseburger'),(23, 'Hamburger'),
+--     (24, 'Finlandia'),(24, 'Martini Prosecco'),(24, 'Jack Daniels'),
+--     (25, 'Thai Salmon'),
+--     (26, 'Philadelphia Max'),(26, 'Martini Prosecco')
+-- GO
+
+-- INSERT INTO [Provider](Provider_name, Email)
+-- VALUES
+--     ('Deluxe Meats', 'delmeats@gmail.com'),
+--     ('Tasty and Fish', 'tastyfish@gmail.com'),
+--     ('Any Vegs', 'anveg@gmail.com'),
+--     ('Everything & More', 'everymove@gmail.com')
+-- GO
+
+-- INSERT INTO Delivery (Delivery_date, Delivery_sum, Delivery_provider)
+-- VALUES
+--     ('2022-09-23', 80000, 1),
+--     ('2022-03-11', 130000, 2),
+--     ('2022-06-01', 45000, 3),
+--     ('2022-12-05', 65000, 4),
+--     ('2022-02-27', 30000, 2),
+--     ('2022-11-04', 40000, 1),
+--     ('2022-01-12', 25000, 4),
+--     ('2022-12-04', 11000, 3),
+--     ('2022-05-17', 21500, 1),
+--     ('2022-07-08', 35000, 2),
+--     ('2022-03-30', 20100, 3)
+-- GO
+
+-- INSERT INTO Delivery_Ingredient(Delivery_ID, Ingredient, Ingredient_weight)
+-- VALUES
+--     (1, 'Beef', 30),(1, 'Pork', 28),(1, 'Bacon', 5),
+--     (2, 'Salmon', 12),(2, 'Tuna', 10),(2, 'Shrimp', 6),(2, 'Eel', 5),
+--     (3, 'Potato', 100),(3, 'Сucumber', 20),(3, 'Tomato', 20),(3, 'Avocado', 8),
+--     (4, 'Mocarella', 20),(4, 'Parmesan', 15),(4, 'Jack Daniels', 20),(4, 'Finlandia', 15),(4, 'Ketchup', 8),
+--     (5, 'Salmon', 25),(5, 'Tuna', 10),(5, 'Eel', 11),(5, 'Shrimp', 8),
+--     (6, 'Pepperoni', 6),(6, 'Chicken', 30),(6, 'Beef', 21),(6, 'Ham', 10),
+--     (7, 'Dorblu', 5),(7, 'Martini Prosecco', 10),(7, 'Feta', 6),(7, 'Mayonnaise', 12),(7, 'Butter', 15),
+--     (8, 'Onion', 20),(8, 'Nori', 5),(8, 'Pepper', 15),(8, 'Pickle', 7),(8, 'Garlic', 5),
+--     (9, 'Chicken', 30),(9, 'Bacon', 10),(9, 'Pork', 20),
+--     (10, 'Tuna', 11),(10, 'Salmon', 15),
+--     (11, 'Potato', 100),(11, 'Lettuce', 30),(11, 'Mushroom', 10),(11, 'Сucumber', 20),(3, 'Tomato', 20)
+-- GO
