@@ -1,0 +1,18 @@
+body {
+    font-size: large;
+}
+#downloadButton {
+    text-align: center;
+}
+#people {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.person {
+    margin: 5px;
+    width: 19%;
+}
+img {
+    width: 100%;
+}

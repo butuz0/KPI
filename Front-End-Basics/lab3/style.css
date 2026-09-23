@@ -1,0 +1,85 @@
+.tasks {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    height: 700px;
+    margin-bottom: 20px;
+}
+img {
+    display: block;
+    width: 55%;
+    height: auto;
+    margin: 5% auto;
+}
+
+.float-green {
+    float: left;
+    min-height: 90%;
+    width: 30%;
+}
+.float-blue {
+    float: right;
+    min-height: 10%;
+    width: 70%;
+}
+.float-yellow {
+    float: left;
+    min-height: 80%;
+    width: 40%;
+}
+.float-purple {
+    float: right;
+    min-height: 90%;
+    width: 30%;
+}
+.float-orange {
+    float: left;
+    min-height: 10%;
+    width: 70%;
+}
+
+.green {
+    background-color: lightgreen;
+}
+.blue {
+    background-color: dodgerblue;
+}
+.yellow {
+    background-color: yellow;
+}
+.purple {
+    background-color: blueviolet;
+}
+.orange {
+    background-color: goldenrod;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "one two two"
+        "one three four"
+        "five five four";
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows:
+        minmax(70px, auto)
+        minmax(560px, auto)
+        minmax(70px, auto);
+}
+
+.grid-green {
+    grid-area: one;
+}
+.grid-blue {
+    grid-area: two;
+}
+.grid-yellow {
+    grid-area: three;
+}
+.grid-purple {
+    grid-area: four;
+}
+.grid-orange {
+    grid-area: five;
+}

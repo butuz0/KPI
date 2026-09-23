@@ -1,0 +1,64 @@
+/* task 1 */
+body {
+    text-align: center;
+    font-size: x-large;
+    color: #020024;
+}
+
+table {
+    width: 100%;
+}
+tr {
+    height: 70px;
+}
+
+.column_1 {
+    width: 50%;
+}
+.column_2 {
+    width: 25%;
+}
+
+.row_1 {
+    background-color: #198f8f;
+}
+.row_1:hover {
+    background-color: #f5f519;
+}
+
+.row_2 {
+    background-color: #f5f519;
+}
+.row_2:hover {
+    background-color: #198f8f;
+}
+
+/* task 2  */
+.figures {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.rectangle {
+    border: solid 1px;
+    width: 250px;
+    height: 170px;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.circle_1 {
+    position: relative;
+    top: 35px;
+    margin: auto;
+}
+.circle_2 {
+    transform: translate(75px, 35px);
+}

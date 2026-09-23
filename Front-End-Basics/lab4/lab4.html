@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="HTML, Lab1, KPI, Front-End" />
+        <meta name="description" content="Lab1 Front-End Basics by Yaroslav Oryshchenko IP-12" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Орищенко Я.О. ІП-12</title>
+    </head>
+    <body>
+        <div>
+            <h2>Орищенко Ярослав Олександрович</h2>
+            <p>29 квітня 2004 року</p>
+            <p>Освіта:</p>
+            <ul>
+                <li>Щасливський ліцей I-III ст., с. Щасливе.</li>
+                <li>НТУУ "КПІ", м. Київ</li>
+            </ul>
+        </div>
+        <div>
+            <p>Хоббі:</p>
+            <ul>
+                <li>Комп'ютерні ігри</li>
+                <li>Баскетбол</li>
+                <li>Колекціонування Хотвілс</li>
+            </ul>
+        </div>
+        <div>
+            <p id="target">Улюблені фільми:</p>
+            <ol>
+                <li id="next">Престиж</li>
+                <li>Острів проклятих</li>
+                <li>Втеча із Шоушенка</li>
+            </ol>
+        </div>
+        <div>
+            <p>
+                Гданськ — культурний, науковий та господарчий центр, а також потужний транспортний вузол Північної
+                Польщі. Місто є великим портом на Балтійському морі, центр промисловості, зокрема нафтохімічної і
+                машинобудування (розвинені суднобудування і судноремонт). Населення — 463 тисячі мешканців (6-те за
+                розміром у Польщі). Разом із Гдинею і Сопотом утворює міську агломерацію — так зване Тримісто (пол.
+                Trójmiasto, Труймясто) з населенням понад 1 мільйон мешканців. Історія міста налічує понад 1000 років,
+                його ідентичність формувалася під впливом різних культур. Гданськ відомий як місто, з якого почалася
+                Друга світова війна і розпочався занепад комунізму в Центральній Європі.
+            </p>
+            <div style="margin: 10px">
+                <button onclick="imageAdd()">Додати</button>
+                <button onclick="imageZoomIn()">Збільшити</button>
+                <button onclick="imageZoomOut()">Зменшити</button>
+                <button onclick="imageDelete()">Видалити</button>
+            </div>
+
+            <a href="https://www.gdansk.uw.gov.pl/" target="_blank">
+                <img id="image" src="https://zakavto.com.ua/images/data/Gdansk-1.jpg" alt="Gdansk" />
+            </a>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

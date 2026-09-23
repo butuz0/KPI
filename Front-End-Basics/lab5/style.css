@@ -1,0 +1,20 @@
+body {
+    font-size: larger;
+}
+li {
+    margin: 5px;
+}
+input {
+    border: 1px solid black;
+}
+.incorrect {
+    border: 1px solid red;
+}
+#items {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.invisible {
+    visibility: hidden;
+}

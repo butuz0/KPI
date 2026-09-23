@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Орищенко Я.О. ІП-12</title>
+    </head>
+    <body>
+        <div id="items">
+            <form action="" method="post">
+                <ul>
+                    <li>
+                        <label for="name">ПІБ</label>
+                        <input type="text" name="name" placeholder="Петренко П.П." />
+                    </li>
+                    <li>
+                        <label for="variant">Варіант</label>
+                        <input type="number" name="variant" />
+                    </li>
+                    <li>
+                        <label for="group">Група</label>
+                        <input type="text" name="group" placeholder="ІП-00" maxlength="5" />
+                    </li>
+                    <li>
+                        <label for="faculty">Факультет</label>
+                        <input type="text" name="faculty" />
+                    </li>
+                    <li>
+                        <label for="dateOfBirth">Дата народження</label>
+                        <input type="date" name="dateOfBirth" />
+                    </li>
+                </ul>
+                <input type="submit" value="Надіслати" onclick="return formValidation(this.form)" />
+            </form>
+            <div id="correct_inputs"></div>
+        </div>
+        <input id="colorInput" type="color" style="width: 150px; margin-bottom: 5px" />
+        <table id="table" border="1"></table>
+
+        <script src="script.js"></script>
+    </body>
+</html>
